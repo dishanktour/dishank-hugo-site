@@ -1,4 +1,8 @@
 {
   "buildCommand": "hugo --gc --minify",
-  "outputDirectory": "public"
+  "outputDirectory": "public",
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/$1" },
+    { "src": "/(.*)", "dest": "/public/$1" }
+  ]
 }
