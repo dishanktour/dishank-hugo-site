@@ -1728,15 +1728,19 @@
   width: 100vw;
   height: 100vh;
 
-  background: rgba(245, 241, 235, 0.75);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  /* Lighter translucent layer */
+  background: rgba(245, 241, 235, 0.25);
+
+  /* Softer blur */
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
 
   display: flex;
   align-items: center;
   justify-content: center;
 
   z-index: 99999;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
 /* POPUP */
@@ -1789,11 +1793,11 @@
   
   background: none;
   border: none;
-  font-size: 4.6rem;
+  font-size: 5.6rem;
   font-weight: bold;
   cursor: pointer;
 
-  color: #a67c52;
+  color:rgba(5, 5, 5, 0.94);
   transition: transform 0.3s ease;
 }
 
