@@ -1,10 +1,11 @@
-baseURL = "baseURL = "https://godishank.com/"
+baseURL = "https://godishank.com/"
 title = "Dishank – Travel With Clarity"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "term", "RSS"]
+canonifyURLs = true
 googleAnalytics = "G-5VKEMZVWD5"
 
 [params]
