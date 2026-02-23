@@ -5,7 +5,8 @@ defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "term", "RSS"]
-canonifyURLs = true
+canonifyURLs = false
+relativeURLs = true
 googleAnalytics = "G-5VKEMZVWD5"
 
 [params]
