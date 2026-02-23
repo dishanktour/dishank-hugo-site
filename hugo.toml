@@ -1,0 +1,45 @@
+baseURL = "https://www.godishank.com/"
+title = "Dishank – Travel With Clarity"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term", "RSS"]
+googleAnalytics = "G-5VKEMZVWD5"
+
+[params]
+  description = "Travel Odisha with clarity, cultural depth, and honest local guidance."
+  author = "Dishank"
+  phone = "919827131776"
+  whatsappMessage = "Hello Dishank, I would like to understand Odisha better before my trip."
+
+[languages]
+
+  [languages.en]
+    languageName = "English"
+    weight = 1
+
+  [languages.hi]
+    languageName = "हिन्दी"
+    weight = 2
+    contentDir = "content/hi"
+
+  [languages.or]
+    languageName = "ଓଡ଼ିଆ"
+    weight = 3
+    contentDir = "content/or"
+
+  [languages.bn]
+    languageName = "বাংলা"
+    weight = 4
+    contentDir = "content/bn"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.8
+

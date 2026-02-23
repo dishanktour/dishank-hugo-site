@@ -1,0 +1,64 @@
+<section id="talk" class="section form-section pad-md">
+
+  <div class="container">
+
+      <div class="form-wrapper">
+
+        <!-- Left Side – Human Message -->
+        <div class="form-intro">
+          <h2>{{ i18n "form_title" }}</h2>
+
+          <p>{{ i18n "form_para1" }}</p>
+          <p>{{ i18n "form_para2" }}</p>
+          <p>{{ i18n "form_para3" }}</p>
+
+          <div class="form-reassurance">
+            {{ i18n "form_reassurance" }}
+          </div>
+
+          <a class="whatsapp-logo-btn"
+            href="https://wa.me/919827131776?text={{ .Site.Params.whatsappMessage | urlquery }}"
+            target="_blank"
+            aria-label="{{ i18n "form_whatsapp_aria" }}">
+
+            <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor">
+              <path d="M19.11 17.29c-.27-.14-1.59-.78-1.83-.87-.25-.09-.43-.14-.61.14-.18.27-.7.87-.86 1.05-.16.18-.31.2-.58.07-.27-.14-1.13-.42-2.15-1.33-.8-.71-1.33-1.59-1.49-1.86-.16-.27-.02-.42.12-.55.13-.13.27-.31.4-.47.13-.16.18-.27.27-.45.09-.18.05-.34-.02-.47-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47-.16-.01-.34-.01-.52-.01-.18 0-.47.07-.71.34-.25.27-.95.93-.95 2.26 0 1.33.97 2.62 1.1 2.8.14.18 1.9 2.9 4.61 4.07.65.28 1.16.45 1.56.58.66.21 1.26.18 1.73.11.53-.08 1.59-.65 1.82-1.27.23-.62.23-1.15.16-1.27-.07-.12-.25-.18-.52-.32z"/>
+              <path d="M16 3C9.38 3 4 8.38 4 15c0 2.64.86 5.07 2.32 7.04L5 29l7.17-1.3A11.95 11.95 0 0016 27c6.62 0 12-5.38 12-12S22.62 3 16 3zm0 21.8c-1.99 0-3.94-.58-5.61-1.67l-.4-.25-4.25.77.8-4.14-.26-.42A9.79 9.79 0 016.2 15c0-5.4 4.4-9.8 9.8-9.8s9.8 4.4 9.8 9.8-4.4 9.8-9.8 9.8z"/>
+            </svg>
+          </a>
+          
+          <div class="whatsapp-label">
+            {{ i18n "form_whatsapp_label" }}
+          </div>
+        
+        </div>
+
+        <!-- Right Side – Form -->
+        <div class="form-box">
+          <form id="contactForm">
+
+            <input type="text" name="name" 
+                  placeholder="{{ i18n "form_placeholder_name" }}" required>
+
+            <input type="tel" name="phone" 
+                  placeholder="{{ i18n "form_placeholder_phone" }}" required>
+
+            <input type="text" name="time" 
+                  placeholder="{{ i18n "form_placeholder_time" }}">
+
+            <input type="text" name="place" 
+                  placeholder="{{ i18n "form_placeholder_place" }}">
+
+            <textarea name="message" 
+                      placeholder="{{ i18n "form_placeholder_message" }}"></textarea>
+
+            <button type="submit" class="btn cta-glass">
+              {{ i18n "form_button" }}
+            </button>
+
+          </form>
+        </div>
+      </div>
+  </div>
+
+</section>

@@ -1,0 +1,279 @@
+[nav_home]
+other = "Home"
+
+[nav_unveiled]
+other = "Unveiled Odisha"
+
+[nav_exists]
+other = "Exists For"
+
+[nav_support]
+other = "Travel Support"
+
+[nav_stories]
+other = "Stories"
+
+[nav_about]
+other = "About Dishank"
+
+[nav_from]
+other = "From Odisha"
+
+[hero_title]
+other = "Travel Odisha With Understanding — Not Overwhelm."
+
+[hero_description]
+other = "Discover its temples, coastlines, and living traditions — and speak to someone who knows the land before you decide to go."
+
+[hero_cta]
+other = "Talk to Dishank"
+
+[unveiled_alt]
+other = "Unveiled Odisha"
+
+[unveiled_title]
+other = "Odisha Is Not Just Visited. It Is Experienced."
+
+[unveiled_para1]
+other = "Ancient temples. Living crafts. Coastal silence. Village rhythms. A culture that continues — not in museums, but in daily life."
+
+[unveiled_para2]
+other = "Dishank helps you see the context behind what you see — so your journey feels informed, not incidental."
+
+[unveiled_para3]
+other = "Explore Odisha with awareness, not just an itinerary."
+
+[unveiled_cta]
+other = "Understand Odisha Better"
+
+[why_alt]
+other = "Why Dishank Exists"
+
+[why_title]
+other = "Travel Should Feel Clear. Not Complicated."
+
+[why_para1]
+other = "Today, information is abundant — but guidance is rare."
+
+[why_para2]
+other = "Dishank exists to bring back conversation. Local understanding. Honest perspective."
+
+[why_para3]
+other = "So you travel informed — not influenced."
+
+[why_cta]
+other = "Have an Honest Conversation"
+
+[how_title]
+other = "Simple. Honest. Human."
+
+[how_intro]
+other = "We begin with people — not packages."
+
+[how_pillar1_title]
+other = "Conversation First"
+
+[how_pillar1_desc]
+other = "We begin by listening."
+
+[how_pillar2_title]
+other = "Honest Guidance"
+
+[how_pillar2_desc]
+other = "Real expectations. Real context."
+
+[how_pillar3_title]
+other = "Thoughtful Travel Support"
+
+[how_pillar3_desc]
+other = "Everything arranged with clarity and care."
+
+[how_journey_line]
+other = "Your journey — your pace, your comfort, your understanding."
+
+[how_connection_line]
+other = "It’s not the consumption. It’s the connection."
+
+[how_final_para]
+other = "We’re not here to sell Odisha to you. We’re here to help you understand it — and decide for yourself."
+
+[how_cta]
+other = "Plan Thoughtfully"
+
+[support_title]
+other = "Travel Support That Feels Personal"
+
+[support_item1]
+other = "Stay arrangements"
+
+[support_item2]
+other = "Local transport"
+
+[support_item3]
+other = "Cultural experiences"
+
+[support_item4]
+other = "Temple visits & heritage routes"
+
+[support_item5]
+other = "Local assistance during your journey"
+
+[support_closing]
+other = "Explained before decisions are made. No assumptions. No surprises."
+
+[support_alt]
+other = "Guided travel in Odisha"
+
+[support_cta]
+other = "Discuss Travel Needs"
+
+[stories_title]
+other = "Beyond Sightseeing."
+
+[stories_intro]
+other = "Odisha isn’t just destinations."
+
+[stories_alt]
+other = "Cultural life of Odisha"
+
+[stories_text]
+other = "It’s traditions, stories, food, festivals, and everyday life. We share insights that help you experience it thoughtfully — not just visit it."
+
+[stories_cta]
+other = "Connect to Storyteller"
+
+[about_line_title]
+other = "THE LINE WE DON'T CROSS"
+
+[about_para1]
+other = "Travel is presented as freedom. But it is often shaped by incentives no traveler sees."
+
+[about_para2]
+other = "Advice is influenced. Margins are hidden. Clarity becomes rare."
+
+[about_origin1]
+other = "Dishank did not begin in a boardroom."
+
+[about_origin2]
+other = "One co-founder drove a cab. The other owned one."
+
+[about_origin3]
+other = "They saw travel from the road level — and saw confusion where there should have been understanding."
+
+[about_origin4]
+other = "They chose to build differently."
+
+[about_declaration]
+other = "Dishank was not created to compete. It was created to correct."
+
+[about_principle1]
+other = "Knowledge before money."
+
+[about_principle2]
+other = "No hidden incentives."
+
+[about_principle3]
+other = "Human dignity first."
+
+[about_quote_title]
+other = "Truth is Luxury."
+
+[about_quote1]
+other = "Not because it is expensive — but because it is rare."
+
+[about_quote2]
+other = "In a system driven by urgency and persuasion, truth requires restraint. Restraint requires character."
+
+[about_quote3]
+other = "Dishank chooses restraint."
+
+[cta_overline]
+other = "START WITH CLARITY"
+
+[cta_title]
+other = "Before You Plan Anything — Talk Once."
+
+[cta_sub]
+other = "No payment. No pressure. Just clarity."
+
+[cta_trust]
+other = "One honest conversation is enough to protect your journey — from anyone, including us."
+
+[cta_button]
+other = "Talk to Dishank"
+
+[cta_alt]
+other = "Dishank Founder"
+
+[form_title]
+other = "Let’s Begin Simply."
+
+[form_para1]
+other = "This is not a booking form."
+
+[form_para2]
+other = "It’s the beginning of clarity."
+
+[form_para3]
+other = "Share what you feel. We’ll take it from there."
+
+[form_reassurance]
+other = "We don’t sell your data. We don’t chase you. We don’t push decisions."
+
+[form_whatsapp_aria]
+other = "Start conversation on WhatsApp"
+
+[form_whatsapp_label]
+other = "Start on WhatsApp"
+
+[form_placeholder_name]
+other = "What should we call you?"
+
+[form_placeholder_phone]
+other = "Where can we reach you (Contact detail)?"
+
+[form_placeholder_time]
+other = "When do you prefer we speak?"
+
+[form_placeholder_place]
+other = "Where are you planning from (Your city)?"
+
+[form_placeholder_message]
+other = "Anything on your mind before we talk?"
+
+[form_button]
+other = "Talk to Dishank"
+
+[closing_title]
+other = "From Odisha."
+
+[closing_line1]
+other = "Odisha is not loud."
+
+[closing_line2]
+other = "It does not advertise itself aggressively."
+
+[closing_line3]
+other = "It lives in rituals, rivers, forests, kitchens, conversations."
+
+[closing_line4]
+other = "Most travellers only see the surface."
+
+[closing_line5]
+other = "If you wish to see beyond that —"
+
+[closing_line6]
+other = "come with time, and come with intention."
+
+[closing_final]
+other = "We’ll be here."
+
+[closing_location]
+other = "Sisupalgarh, Bhubaneswar, Odisha, India"
+
+[closing_whatsapp_label]
+other = "WhatsApp:"
+
+[closing_tagline]
+other = "Truth is Luxury."
+
