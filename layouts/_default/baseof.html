@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    {{ if .IsHome }}
+    Odisha Travel Guide – Cultural Tours, Local Support & Authentic Experiences
+    {{ else }}
+    {{ .Title }} | Dishank
+    {{ end }}
+  </title>
+
+  <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta name="author" content="{{ .Site.Params.author }}">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ if .IsHome }}Dishank – Travel With Clarity in Odisha{{ else }}{{ .Title }} | Dishank{{ end }}">
+  <meta property="og:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:image" content="{{ with .Params.image }}{{ . | absURL }}{{ else }}{{ "images/og-image.webp" | absURL }}{{ end }}">
+  <meta property="og:site_name" content="Dishank">
+  <meta property="og:image:type" content="image/webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="{{ .Site.Language.Lang }}">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ if .IsHome }}Dishank – Travel With Clarity in Odisha{{ else }}{{ .Title }} | Dishank{{ end }}">
+  <meta name="twitter:description" content="{{ .Site.Params.description }}">
+  <meta name="twitter:image" content="{{ with .Params.image }}{{ . | absURL }}{{ else }}{{ "images/og-image.webp" | absURL }}{{ end }}">
+  <meta name="twitter:site" content="@DishankTravel">
+  <meta name="twitter:creator" content="@DishankTravel">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="preconnect" href="https://vercel.com">
+  <link rel="dns-prefetch" href="https://vercel.com">
+
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+  <!-- Hreflang for multilingual SEO -->
+  {{ range .Translations }}
+  <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+  {{ end }}
+  <link rel="alternate" hreflang="{{ .Site.Language.Lang }}" href="{{ .Permalink }}">
+  <link rel="alternate" hreflang="x-default" href="{{ .Site.BaseURL }}">
+
+  <style>
+    html {
+      font-family: Georgia, "Times New Roman", serif;
+      font-display: swap;
+    }
+  </style>
+
+  <style>
+    /* Critical minimal layout styles for instant first paint */
+    body {
+      margin: 0;
+      background: #f5f1eb;
+      color: #3b2f26;
+      font-family: serif;
+    }
+  
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+  
+    .lang-overlay {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+
+  <link rel="preload" href="{{ "main.css" | relURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="{{ "main.css" | relURL }}?v={{ now.Unix }}">
+  </noscript>
+
+  {{ $hero := resources.Get "images/Hero.webp" }}
+  {{ $heroLarge := $hero.Resize "1600x" }}
+  <link rel="preload" as="image" href="{{ $heroLarge.RelPermalink }}">
+
+  {{ partial "head.html" . }}
+
+  {{ template "_internal/google_analytics.html" . }}
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "name": "Dishank",
+      "url": "{{ .Site.BaseURL }}",
+      "logo": "{{ "images/og-image.webp" | absURL }}",
+      "description": "{{ .Site.Params.description }}",
+      "areaServed": "Odisha, India",
+      "sameAs": [
+        "https://instagram.com/dishank_travelwithclarity",
+        "https://facebook.com/Dishankodisa",
+        "https://reddit.com/user/dishank_travel/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+        "https://youtube.com/@Dishank-o8x",
+        "https://x.com/DishankOdisha"
+        ]
+    }
+  </script>
+
+  {{ if and (eq .Section "blog") (.IsSection) }}
+  <script type="application/ld+json">
+  {
+   "@context": "https://schema.org",
+   "@type": "Blog",
+   "name": "Unfold Odisha",
+   "url": "{{ .Permalink }}",
+   "description": "Editorial insights and cultural understanding of Odisha."
+  }
+  </script>
+  {{ end }}
+
+  {{ if and (eq .Section "blog") (.IsPage) }}
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ .Title }}",
+  "description": "{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}",
+  "author": {
+    "@type": "Person",
+    "name": "Dishank"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dishank",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ "images/logo.svg" | absURL }}"
+    }
+  },
+  "datePublished": "{{ .Date.Format "2006-01-02" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  }
+  }
+  </script>
+  {{ end }}
+
+</head>
+
+<div class="social-ribbon">
+  <a href="https://instagram.com/dishank_travelwithclarity" target="_blank" data-label="Instagram">
+    <svg viewBox="0 0 24 24"><path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 5.2A4.8 4.8 0 1 1 7.2 12 4.8 4.8 0 0 1 12 7.2zm0 1.8A3 3 0 1 0 15 12a3 3 0 0 0-3-3zm4.8-3.3a1.1 1.1 0 1 1-1.1 1.1 1.1 1.1 0 0 1 1.1-1.1z"/></svg>
+  </a>
+
+  <a href="https://facebook.com/Dishankodisa" target="_blank" data-label="Facebook">
+    <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9v-2.9h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.7-1.6 1.5v1.8h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg>
+  </a>
+
+  <a href="https://reddit.com/user/dishank_travel/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" target="_blank" data-label="Reddit">
+    <svg viewBox="0 0 24 24"><path d="M24 12c0-1.3-1-2.3-2.3-2.3-.6 0-1.1.2-1.5.6-1.5-1-3.5-1.6-5.7-1.7l1.2-3.7 3.2.7c.1.9.9 1.6 1.8 1.6 1 0 1.9-.8 1.9-1.9S21.9 3 20.9 3c-.7 0-1.4.4-1.7 1L15.4 3c-.3-.1-.6.1-.7.4l-1.4 4.4c-2.2.1-4.2.7-5.7 1.7-.4-.4-.9-.6-1.5-.6C1 9.7 0 10.7 0 12c0 .9.5 1.6 1.2 2-.1.4-.2.8-.2 1.2 0 3.3 3.7 6 8.2 6s8.2-2.7 8.2-6c0-.4-.1-.8-.2-1.2.7-.4 1.2-1.1 1.2-2z"/></svg>
+  </a>
+
+  <a href="https://youtube.com/@Dishank-o8x" target="_blank" data-label="YouTube">
+    <svg viewBox="0 0 24 24"><path d="M21.6 7.2s-.2-1.5-.8-2.1c-.8-.8-1.7-.8-2.1-.9C15.8 4 12 4 12 4h0s-3.8 0-6.7.2c-.4.1-1.3.1-2.1.9-.6.6-.8 2.1-.8 2.1S2 9 2 10.8v1.4C2 14 2.4 15.8 2.4 15.8s.2 1.5.8 2.1c.8.8 1.9.8 2.4.9 1.7.2 6.4.2 6.4.2s3.8 0 6.7-.2c.4-.1 1.3-.1 2.1-.9.6-.6.8-2.1.8-2.1S22 14 22 12.2v-1.4c0-1.8-.4-3.6-.4-3.6zM9.8 14.6V9.4l4.6 2.6-4.6 2.6z"/></svg>
+  </a>
+
+  <a href="https://x.com/DishankOdisha" target="_blank" data-label="X">
+    <svg viewBox="0 0 24 24"><path d="M18.9 2H22l-7.6 8.7L23 22h-6.8l-5.3-6.9L4.9 22H2l8.1-9.3L2 2h6.9l4.8 6.3L18.9 2z"/></svg>
+  </a>
+
+</div>
+
+<body>
+
+  <!-- Language Slider Overlay -->
+{{ if .IsHome }}
+<div id="language-overlay" class="lang-overlay">
+  <div class="lang-popup">
+    
+    <button class="lang-arrow left" aria-label="Previous">&#8592;</button>
+
+    <div class="lang-message-wrapper">
+
+      <div class="lang-message active">
+        I’m Dishank — your local friend in Odisha.<br>
+        I help you understand the culture, plan wisely,<br>
+        and arrange everything for a smooth, meaningful journey.
+
+        <div class="enter-hint">
+          Click anywhere or scroll or press any key to enter
+        </div>
+      </div>
+
+      <div class="lang-message">
+        मैं दिशाांक हूँ — ओडिशा में आपका स्थानीय मित्र।<br>
+        मैं आपको संस्कृति समझने, सही योजना बनाने<br>
+        और एक सहज व यादगार यात्रा की व्यवस्था में मदद करता हूँ।
+
+        <div class="enter-hint">
+          कहीं भी क्लिक करें, स्क्रॉल करें या कोई भी कुंजी दबाएँ
+        </div>      
+      </div>
+
+      <div class="lang-message">
+        আমি দিশাঙ্ক — ওড়িশায় আপনার স্থানীয় বন্ধু।<br>
+        আমি আপনাকে সংস্কৃতি বুঝতে, সঠিক পরিকল্পনা করতে<br>
+        এবং একটি স্মরণীয় ও স্বচ্ছন্দ ভ্রমণের ব্যবস্থা করতে সাহায্য করি।
+
+        <div class="enter-hint">
+          যে কোনো জায়গায় ক্লিক করুন, স্ক্রল করুন বা যেকোনো কী চাপুন
+        </div>
+      </div>
+
+      <div class="lang-message">
+        ମୁଁ ଦିଶାଙ୍କ — ଓଡ଼ିଶାରେ ଆପଣଙ୍କ ସ୍ଥାନୀୟ ସାଥୀ।<br>
+        ସଂସ୍କୃତି ବୁଝିବା, ସଠିକ୍ ପରିକଳ୍ପନା କରିବା<br>
+        ଏବଂ ସୁନ୍ଦର ଓ ସ୍ମରଣୀୟ ଯାତ୍ରା ପାଇଁ ମୁଁ ସହଯୋଗ କରେ।
+
+        <div class="enter-hint">
+          କେଉଁସି ଜାଗାରେ କ୍ଲିକ୍ କରନ୍ତୁ, ସ୍କ୍ରୋଲ୍ କରନ୍ତୁ କିମ୍ବା କୌଣସି କୀ ଦବାନ୍ତୁ
+        </div>
+      </div>
+
+    </div>
+
+    <button class="lang-arrow right" aria-label="Next">&#8594;</button>
+
+  </div>
+</div>
+{{ end }}
+
+{{ if ne .Section "blog" }}
+  {{ partial "navbar.html" . }}
+{{ else }}
+<div class="nav-logo-only">
+  <div class="logo-left">
+  <img src="{{ "images/logo.svg" | relURL }}" alt="Dishank">
+  </div>
+  <div class="masthead">
+  <div class="masthead-title">
+  UNFOLD ODISHA
+  </div>
+  <div class="masthead-subtitle">
+  Cultural Notes & Explorations
+  </div>
+  </div>  
+</div>
+{{ end }}
+
+{{ if ne .Section "blog" }}
+<div class="editorial-flag">
+  <a href="/en/blog/" target="_self">Unfold Odisha</a>
+</div>
+{{ end }}
+
+  <main>
+    {{ block "main" . }}{{ end }}
+    {{ partial "footer.html" . }}
+  </main>
+
+  {{ $js := resources.Get "js/main.js" | minify | fingerprint }}
+  <script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+
+</body>
+</html>

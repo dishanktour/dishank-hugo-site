@@ -1,0 +1,46 @@
+{{ define "main" }}
+
+<section class="article-page">
+
+{{ with .Params.image }}
+  {{ $img := $.Resources.GetMatch . }}
+  {{ if $img }}
+    <div class="article-hero">
+      <img src="{{ $img.RelPermalink }}" alt="{{ $.Title }}">
+    </div>
+  {{ end }}
+{{ end }}
+
+<div class="container article-container">
+
+<header class="article-header">
+
+<h1>{{ .Title }}</h1>
+
+<p class="article-date">
+{{ .Date.Format "2 January 2006" }}
+</p>
+
+</header>
+
+<div class="article-body">
+
+{{ .Content }}
+
+</div>
+
+<footer class="article-footer">
+
+<p>
+This article is part of the
+<strong>Unfold Odisha</strong> editorial series exploring
+the deeper cultural rhythms of the region.
+</p>
+
+</footer>
+
+</div>
+
+</section>
+
+{{ end }}

@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+  <h1 class="seo-h1">
+    {{ if eq .Site.Language.Lang "hi" }}
+      ओडिशा को सांस्कृतिक गहराई और ईमानदार स्थानीय मार्गदर्शन के साथ जानें
+    {{ else if eq .Site.Language.Lang "or" }}
+      ସଂସ୍କୃତିକ ଗଭୀରତା ଓ ସତ୍ୟନିଷ୍ଠ ସ୍ଥାନୀୟ ମାର୍ଗଦର୍ଶନ ସହିତ ଓଡ଼ିଶାକୁ ଅନୁଭବ କରନ୍ତୁ
+    {{ else if eq .Site.Language.Lang "bn" }}
+      সাংস্কৃতিক গভীরতা ও সৎ স্থানীয় সহায়তার সাথে ওড়িশা আবিষ্কার করুন
+    {{ else }}
+      Explore Odisha with Cultural Depth and Honest Local Guidance
+    {{ end }}
+  </h1>
+
+  {{ partial "hero.html" . }}
+  {{ partial "unveiled-odisha.html" . }}
+  {{ partial "why-dishank.html" . }}
+  {{ partial "how-it-helps.html" . }}
+  {{ partial "travel-support.html" . }}
+  {{ partial "stories.html" . }}
+  {{ partial "about-dishank.html" . }}
+  {{ partial "cta.html" . }}
+  {{ partial "form.html" . }}
+
+{{ end }}

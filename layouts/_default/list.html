@@ -1,0 +1,129 @@
+{{ define "main" }}
+
+<section class="section unfold-odisha">
+
+<div class="container">
+
+<!-- INTRO FROM _index.md -->
+
+<div class="unfold-intro">
+
+  <h3>{{ .Title }}</h3>
+  
+  <div class="content">
+  {{ .Content }}
+  </div>
+  
+</div>
+
+<!-- DISTRICT EXPLORER -->
+
+<div class="odisha-explorer">
+  <p class="explorer-intro">
+    Have you visited these places — or only passed through them?
+    Odisha hides hundreds of meaningful locations beyond the famous temples.
+    Choose a district to discover places that quietly shape the culture,
+    history, and landscape of the region.
+  </p>
+<h2>Explore by District</h2>
+<div class="district-control">
+  <label for="district-select">Choose a District</label>
+<div class="district-select-wrapper">
+<select id="district-select">
+  <option value="">Select a district</option>
+  <option value="puri">Puri</option>
+  <option value="cuttack">Cuttack</option>
+  <option value="khordha">Khordha (Bhubaneswar)</option>
+</select>
+</div>
+</div>
+</div>
+
+<!-- PLACES TABLE -->
+
+<div id="places-table"></div>
+
+
+<!-- BLOG / ESSAYS SECTION -->
+
+<div class="blog-list">
+
+<h2>Articles & Cultural Notes</h2>
+
+<p class="blog-intro">
+  Writers, travelers, and observers often see Odisha differently.
+  This section collects reflections, cultural observations,
+  and thoughtful essays about the land and its traditions.
+</p>
+
+{{ $paginator := .Paginate (.Pages.ByDate.Reverse) }}
+
+<div class="articles-list">
+
+{{ range $paginator.Pages }}
+
+<article class="article-card">
+
+<h3>
+<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+</h3>
+
+<p class="article-desc">
+{{ .Params.description }}
+</p>
+
+<div class="article-meta">
+{{ .Params.author }} — {{ .Params.location }}
+</div>
+
+</article>
+
+{{ end }}
+
+</div>
+
+{{ if gt $paginator.TotalPages 1 }}
+
+<div class="pagination">
+
+{{ if $paginator.HasPrev }}
+<a href="{{ $paginator.Prev.URL }}">← Previous</a>
+{{ end }}
+
+{{ range $paginator.Pagers }}
+
+<a href="{{ .URL }}">{{ .PageNumber }}</a>
+
+{{ end }}
+
+{{ if $paginator.HasNext }}
+<a href="{{ $paginator.Next.URL }}">Next →</a>
+{{ end }}
+
+</div>
+
+{{ end }}
+
+<div class="blog-notes">
+
+  <p class="blog-note">
+    <strong>Note —</strong>
+    Have a thoughtful observation about Odisha?
+    You may share your article or cultural note with Dishank.
+    Selected writings may be published here with author credit.
+  </p>
+  
+  <p class="blog-disclaimer">
+  Disclaimer: Articles published in this section reflect the views of their respective authors.
+  Dishank provides the platform for cultural discussion but does not independently verify
+  every historical or factual claim. Responsibility for originality and copyright
+  belongs to the respective writer.
+  </p>
+  
+</div>
+
+</div>
+
+</section>
+
+{{ end }}
