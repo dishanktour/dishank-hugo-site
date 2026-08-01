@@ -1,0 +1,37 @@
+baseURL = 'https://godishank.com/'
+title = 'Dishank Logbook'
+theme = 'dishank-journal'
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = true
+enableRobotsTXT = true
+
+[languages]
+  [languages.en]
+    languageCode = 'en-US'
+    languageName = 'English'
+    weight = 1
+    contentDir = 'content/en'
+    [languages.en.params]
+      tagline = "Odisha, Through Local Eyes"
+      vision = "Real travel, Right directions, Total peace of mind"
+      description = "Dishank is a living travel logbook of Odisha, replacing consumption with comprehension through 100% transparent ground support."
+
+  [languages.hi]
+    languageCode = 'hi-IN'
+    languageName = 'हिन्दी'
+    weight = 2
+    contentDir = 'content/hi'
+    [languages.hi.params]
+      tagline = "ओडिशा, स्थानीय दृष्टिकोण से"
+      vision = "सही दिशा के साथ सच्ची यात्रा, पूर्ण मानसिक शांति"
+      description = "Dishank (दिशांक) ओडिशा की एक जीवंत यात्रा पत्रिका है, जो 100% पारदर्शी ज़मीनी सहयोग के माध्यम से अनिश्चितता को स्पष्टता में बदलती है।"
+
+  [languages.or]
+    languageCode = 'or-IN'
+    languageName = 'ଓଡ଼ିଆ'
+    weight = 3
+    contentDir = 'content/or'
+    [languages.or.params]
+      tagline = "ଓଡ଼ିଶା, ସ୍ଥାନୀୟ ନଜରରୁ"
+      vision = "ସଠିକ୍ ଦିଗ ସହିତ ପ୍ରକୃତ ଯାତ୍ରା, ସମ୍ପୂର୍ଣ୍ଣ ମାନସିକ ଶାନ୍ତି"
+      description = "Dishank (ଦିଶାଙ୍କ) ଓଡ଼ିଶାର ଏକ ଜୀବନ୍ତ ଯାତ୍ରା ପତ୍ରିକା, ଯାହା ୧୦୦% ସ୍ୱଚ୍ଛ ଗ୍ରାଉଣ୍ଡ ସପୋର୍ଟ ମାଧ୍ୟମରେ ଅନିଶ୍ଚିତତାକୁ ସ୍ପଷ୍ଟତାରେ ପରିଣତ କରେ।"

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>{{ if .Title }}{{ .Title }} | {{ .Site.Title }}{{ else }}{{ .Site.Title }} — {{ .Site.Params.tagline }}{{ end }}</title>
+    <meta name="title" content="{{ .Site.Title }} — {{ .Site.Params.tagline }}">
+    <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    <!-- Multilingual Hreflang Tags (Self-referencing + Translations) -->
+    <link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}" />
+    {{ range .Translations }}
+    <link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}" />
+    {{ end }}
+    <link rel="alternate" hreflang="x-default" href="{{ .Site.BaseURL }}en/" />
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:title" content="{{ .Site.Title }} — {{ .Site.Params.tagline }}">
+    <meta property="og:description" content="{{ .Site.Params.description }}">
+    <meta property="og:image" content="{{ "og-share.jpg" | absURL }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:locale" content="{{ replace .Language.LanguageCode "-" "_" }}">
+
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ .Permalink }}">
+    <meta property="twitter:title" content="{{ .Site.Title }} — {{ .Site.Params.tagline }}">
+    <meta property="twitter:description" content="{{ .Site.Params.description }}">
+    <meta property="twitter:image" content="{{ "og-share.jpg" | absURL }}">
+
+    <!-- Favicons & Mobile Theme -->
+    <link rel="icon" type="image/svg+xml" href="/logo.svg">
+    <link rel="apple-touch-icon" href="/logo.svg">
+    <meta name="theme-color" content="#1a0c0a">
+
+    <!-- Google Fonts Preconnect & Optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Reenie+Beanie&family=Lora:ital,wght@0,400..700;1,400..700&family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Fail-Safe CSS Pipeline Minification -->
+    {{ with resources.Get "css/main.css" }}
+      {{ $style := . | minify }}
+      <link rel="stylesheet" href="{{ $style.Permalink }}">
+    {{ else }}
+      <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+    {{ end }}
+
+    <!-- Enhanced JSON-LD Structured Data for Local & Search Authority -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "@id": "https://godishank.com/#organization",
+      "name": "Dishank",
+      "url": "https://godishank.com",
+      "logo": "https://godishank.com/logo.svg",
+      "image": "https://godishank.com/cover.webp",
+      "description": "{{ .Site.Params.description }}",
+      "slogan": "{{ .Site.Params.tagline }}",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "102, Ravi Talkies Road",
+        "addressLocality": "Bhubaneswar",
+        "addressRegion": "Odisha",
+        "postalCode": "751002",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "20.2458",
+        "longitude": "85.8394"
+      },
+      "areaServed": [
+        "Bhubaneswar",
+        "Puri",
+        "Cuttack",
+        "Berhampur",
+        "Jajpur",
+        "Odisha"
+      ],
+      "telephone": "+919451250284",
+      "priceRange": "Free Ground Support"
+    }
+    </script>
+</head>
+<body>
+    {{ block "main" . }}{{ end }}
+
+    <!-- Fail-Safe JS Pipeline -->
+    {{ with resources.Get "js/main.js" }}
+      {{ $js := . | minify | fingerprint }}
+      <script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+    {{ end }}
+</body>
+</html>

@@ -1,0 +1,177 @@
+Folder PATH listing
+Volume serial number is 0000007F 4057:5C93
+C:.
+|   .hugo_build.lock
+|   current_tree.txt
+|   hugo.toml
+|   
++---archetypes
+|       default.md
+|       
++---assets
+|   +---css
+|   |       main.css
+|   |       
+|   \---js
+|           main.js
+|           
++---content
+|   +---en
+|   |       _index.md
+|   |       
+|   +---hi
+|   |       _index.md
+|   |       
+|   \---or
+|           _index.md
+|           
++---data
++---i18n
+|       en.toml
+|       hi.toml
+|       or.toml
+|       
++---layouts
+|   |   baseof.html
+|   |   home.html
+|   |   
+|   \---partials
+|           index.html
+|           
++---public
+|   |   bottom.webp
+|   |   box.webp
+|   |   contect.webp
+|   |   cover.webp
+|   |   CSS for mobile & tab view.txt
+|   |   favicon.ico
+|   |   Gemini_Generated_Image_kzhgp6kzhgp6kzhg (1).jpg
+|   |   Gemini_Generated_Image_tbbtc6tbbtc6tbbt.jpg
+|   |   generate-og.html
+|   |   guide.webp
+|   |   index.html
+|   |   intro.webp
+|   |   logo.svg
+|   |   og-share-base.jpg
+|   |   og-share.jpg
+|   |   planner.webp
+|   |   robots.txt
+|   |   sitemap.xml
+|   |   story-1.webp
+|   |   story-10.webp
+|   |   story-11.webp
+|   |   story-2.webp
+|   |   story-3.webp
+|   |   story-4.webp
+|   |   story-5.webp
+|   |   story-6.webp
+|   |   story-7.webp
+|   |   story-8.webp
+|   |   story-9.webp
+|   |   
+|   +---css
+|   |       main.css
+|   |       main.min.css
+|   |       
+|   +---en
+|   |   |   index.html
+|   |   |   index.xml
+|   |   |   sitemap.xml
+|   |   |   
+|   |   +---categories
+|   |   |       index.html
+|   |   |       index.xml
+|   |   |       
+|   |   \---tags
+|   |           index.html
+|   |           index.xml
+|   |           
+|   +---hi
+|   |   |   index.html
+|   |   |   index.xml
+|   |   |   sitemap.xml
+|   |   |   
+|   |   +---categories
+|   |   |       index.html
+|   |   |       index.xml
+|   |   |       
+|   |   \---tags
+|   |           index.html
+|   |           index.xml
+|   |           
+|   +---js
+|   |       main.min.b99fcef08d43ef9e24e10b7ad72342223dcb9b80c221db978d9fa6d708273285.js
+|   |       
+|   \---or
+|       |   index.html
+|       |   index.xml
+|       |   sitemap.xml
+|       |   
+|       +---categories
+|       |       index.html
+|       |       index.xml
+|       |       
+|       \---tags
+|               index.html
+|               index.xml
+|               
++---static
+|       bottom.webp
+|       box.webp
+|       contect.webp
+|       cover.webp
+|       generate-og.html
+|       guide.webp
+|       intro.webp
+|       logo.svg
+|       og-share-base.jpg
+|       og-share.jpg
+|       planner.webp
+|       robots.txt
+|       story-1.webp
+|       story-10.webp
+|       story-11.webp
+|       story-2.webp
+|       story-3.webp
+|       story-4.webp
+|       story-5.webp
+|       story-6.webp
+|       story-7.webp
+|       story-8.webp
+|       story-9.webp
+|       
+\---themes
+    \---dishank-journal
+        |   hugo.toml
+        |   
+        +---archetypes
+        |       default.md
+        |       
+        +---assets
+        +---content
+        |       _index.md
+        |       
+        +---data
+        +---i18n
+        +---layouts
+        |   |   baseof.html
+        |   |   home.html
+        |   |   page.html
+        |   |   section.html
+        |   |   taxonomy.html
+        |   |   term.html
+        |   |   
+        |   \---_partials
+        |       |   footer.html
+        |       |   head.html
+        |       |   header.html
+        |       |   menu.html
+        |       |   terms.html
+        |       |   
+        |       \---head
+        |               css.html
+        |               js.html
+        |               
+        \---static
+                favicon.ico
+                

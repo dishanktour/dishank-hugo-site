@@ -1,0 +1,428 @@
+# ==============================================================================
+# COVER OVERLAY & BRANDING
+# ==============================================================================
+[cover_emblem]
+other = "Dishank"
+
+[cover_tagline]
+other = "Odisha, Through Local Eyes"
+
+[cover_hook_1]
+other = "Before you trust the roads..."
+
+[cover_hook_2]
+other = "Trust someone who already knows them."
+
+[cover_cta]
+other = "Open this journal first."
+
+[cover_quote_1]
+other = "Truth is the greatest luxury"
+
+[cover_quote_2]
+other = "a traveler can have."
+
+
+# ==============================================================================
+# DECK NAVIGATION TABS
+# ==============================================================================
+[tab_intro]
+other = "Introduction"
+
+[tab_how_it_works]
+other = "How It Works"
+
+[tab_offerings]
+other = "Offerings"
+
+[tab_planner]
+other = "Planner"
+
+[tab_reach_us]
+other = "Reach Us"
+
+
+# ==============================================================================
+# PAGE 1: INTRODUCTION
+# ==============================================================================
+[p1_label]
+other = "Introduction"
+
+[p1_heading]
+other = "Travel changes when the advice is honest."
+
+[p1_body]
+other = "Odisha is full of unforgettable experience, but also decisions that quietly shape your journey - where to stay, whom to trust, and what to avoid. Dishank exists to replace uncertainty with honest local guidance, so every choice is yours, not someone else's commission."
+
+[p1_note_header]
+other = "Field Note"
+
+[p1_note_text]
+other = "Most travel mistakes happen before the journey even begins."
+
+[p1_promise_title]
+other = "The Dishank Promise"
+
+[p1_rule_1_title]
+other = "Honest Advice"
+
+[p1_rule_1_desc]
+other = "Every recommendation begins with what is right for your journey."
+
+[p1_rule_2_title]
+other = "Zero Commission"
+
+[p1_rule_2_desc]
+other = "No hotel, No driver, No hidden incentives. Insights are uncompromised."
+
+[p1_rule_3_title]
+other = "Verified Before You Decide"
+
+[p1_rule_3_desc]
+other = "When needed, we verify hotels and services before you commit."
+
+
+# ==============================================================================
+# PAGE 2: HOW IT WORKS
+# ==============================================================================
+[p2_label]
+other = "How We Works"
+
+[p2_heading]
+other = "Every memorable journey begins with a conversation."
+
+[p2_body]
+other = "Every journey is unique. Before we recommend a place, hotel or route, we first understand what matters most to you. Then we help you experience Odisha with confidence."
+
+[p2_stamp_top]
+other = "DISCOUNT"
+
+[p2_stamp_center]
+other = "AVAILABLE"
+
+[p2_stamp_bottom]
+other = "OFFER VALID"
+
+[p2_timeline_title]
+other = "Journey Timeline"
+
+[p2_step1_title]
+other = "Step 1: Tell Us About Your Journey"
+
+[p2_step1_desc1]
+other = "Share your travel plans and expectations."
+
+[p2_step1_desc2]
+other = "SEE ODISHA EVEN BEFORE YOU ARRIVE."
+
+[p2_step2_title]
+other = "Step 2: Plan With Us"
+
+[p2_step2_desc]
+other = "Choose from three personalize travel plans, with support whenever you need it."
+
+[p2_step3_title]
+other = "Step 3: Verify Before You Book"
+
+[p2_step3_desc1]
+other = "See your hotel live before you book."
+
+[p2_step3_desc2]
+other = "NO SURPRISES. NO REGRETS"
+
+[p2_step4_title]
+other = "Step 4: Travel With Confidence"
+
+[p2_step4_desc]
+other = "Your local friend stays with you throughout the journey."
+
+[badge_free]
+other = "FREE"
+
+
+# ==============================================================================
+# PAGE 3: OFFERINGS & MOOD ENGINE
+# ==============================================================================
+[p3_label]
+other = "The Mood Engine"
+
+[p3_heading]
+other = "Travel changes when your itinerary honors your true emotional rhythm."
+
+[p3_body]
+other = "Standard travel packages push rigid schedules and commercial tourist tracks. The Dishank Mood Engine decodes your travel mindset—whether you seek quiet spiritual sanctums, untouched coastal nature, or ancient archaeological stone heritage—before a single booking decision is made."
+
+[p3_warning_title]
+other = "CRITICAL EXECUTION NOTE"
+
+[p3_warning_text]
+other = "A journey across Cuttack, Bhubaneswar, and Puri can scale anywhere from ₹1,000 to ₹30,000 per day. It is never a question of raw money—it is entirely about precise planning and personal preference. A miscalculated route can cost you more than anyone can imagine."
+
+[p3_support_title]
+other = "Choose Your Level of Support"
+
+[p3_plan_1_title]
+other = "Plan My Journey"
+
+[p3_plan_1_desc]
+other = "A personalized travel plan, created around your interest, time and budget."
+
+[p3_plan_2_title]
+other = "Handle Everything"
+
+[p3_plan_2_desc]
+other = "We take care of planning, verification and coordination, so you can simply enjoy Odisha."
+
+[p3_plan_3_title]
+other = "Personal Travel Executive (Complete peace of mind)"
+
+[p3_plan_3_desc]
+other = "For travelers who value complete peace of mind."
+
+[badge_custom]
+other = "Customized"
+
+
+# ==============================================================================
+# PAGE 5: PLANNER ENGINE
+# ==============================================================================
+[p5_label]
+other = "Find Your Journey"
+
+[p5_heading]
+other = "Still unsure? Let's find the right journey together."
+
+[p5_body]
+other = "Answer a few simple questions about your interests, travel style and expectations. We'll help you discover the best way to experience Odisha."
+
+[vibe_spiritual_title]
+other = "🕊️ Spiritual Awakening"
+
+[vibe_spiritual_desc]
+other = "Heritage & Quiet Sanctums"
+
+[vibe_nature_title]
+other = "🌿 Raw Nature"
+
+[vibe_nature_desc]
+other = "Coastal Paths & Fringes"
+
+[vibe_historic_title]
+other = "🏛️ Archaeological Heritage"
+
+[vibe_historic_desc]
+other = "Ancient Caves & Ruins"
+
+[vibe_mixed_title]
+other = "🌀 Blended Exploration Track"
+
+[vibe_mixed_desc]
+other = "Spiritual, Nature & Heritage Mix"
+
+[slider_duration]
+other = "Duration Timeline"
+
+[slider_pace]
+other = "Journey Cadence (Pace)"
+
+[pace_default_display]
+other = "Average to know the Story"
+
+[p5_footnote]
+other = "* Currently fully operational across Bhubaneswar, Cuttack, Puri, Berhampur & Jajpur. Regional channels served subject to advance conditions."
+
+
+# ==============================================================================
+# PAGE 4: REGISTRY FORM & CONTACTS
+# ==============================================================================
+[p4_label]
+other = "The Registry Log"
+
+[form_sentence_start]
+other = "My name is"
+
+[form_placeholder_name]
+other = "Your Name"
+
+[form_sentence_middle1]
+other = "and I am planning a journey to explore Odisha's"
+
+[form_dropdown_trigger]
+other = "Preference"
+
+[pref_spiritual]
+other = "Spirituality"
+
+[pref_nature]
+other = "Nature"
+
+[pref_historic]
+other = "Historic"
+
+[pref_mixed]
+other = "Mix of All"
+
+[form_sentence_middle2]
+other = "starting on"
+
+[form_sentence_middle3]
+other = ". You can reach me at"
+
+[form_placeholder_contact]
+other = "Mobile No. or Email Id"
+
+[form_sentence_end]
+other = "to clear the hidden realities."
+
+[form_submit_btn]
+other = "Register Entry"
+
+[contact_direct_channels]
+other = "Direct Logbook Channels"
+
+[contact_whatsapp]
+other = "Instant WhatsApp Connect"
+
+[contact_address]
+other = "102, Ravi Talkies Road, Bhubaneswar-2, Khordha, Odisha"
+
+# Pledge Box
+[pledge_title]
+other = "The Ultimate Pledge"
+
+[pledge_rule_1_title]
+other = "Zero Commissions"
+
+[pledge_rule_1_desc]
+other = "We accept absolutely no backdoor payouts, markups, or channel kickbacks from drivers, local guides, or hotel systems."
+
+[pledge_rule_2_title]
+other = "Free Consultations"
+
+[pledge_rule_2_desc]
+other = "A true companion never charges just to talk. Mapping structural routes and sharing ground realities costs zero rupees."
+
+[pledge_rule_3_title]
+other = "100% Transparency"
+
+[pledge_rule_3_desc]
+other = "Every raw primary vendor invoice is passed directly to the traveler without hidden agency padding or negotiation conflicts."
+
+
+# ==============================================================================
+# FOOTER METRICS, STAMPS & CUSTOMER STORIES
+# ==============================================================================
+[metric_ground_support]
+other = "Ground Support"
+
+[metric_free]
+other = "100% Free"
+
+[metric_slide1_indicator]
+other = "Conflict-Free Journeys Logged in Last 9 Months"
+
+[stamp_antifraud_top]
+other = "ANTI-FRAUD"
+
+[stamp_antifraud_center]
+other = "SECURE"
+
+[stamp_antifraud_bottom]
+other = "PROTOCOL"
+
+[stamp_truth_top]
+other = "TRUTH FIRST"
+
+[stamp_truth_center]
+other = "VERIFIED"
+
+[stamp_truth_bottom]
+other = "NO HIDDEN"
+
+[stamp_secured_top]
+other = "100%"
+
+[stamp_secured_mid]
+other = "SECURED"
+
+[stamp_secured_center]
+other = "DIRECT"
+
+[stamp_secured_bottom]
+other = "CONNECTION"
+
+[ai_story_note]
+other = "* All images are artistic AI recreations of original customer memories to protect client privacy."
+
+# Customer Stories
+[story_1_title]
+other = "Beyond the Trip: A Friendship Mapped"
+
+[story_1_body]
+other = "“Overcoming online traps, Dishank's guidance turned a stressful trip into their best vacation. Months later, they still call us asking for authentic Odisha rasgullas!”"
+
+[story_2_title]
+other = "From Strangers to Lunch Together"
+
+[story_2_body]
+other = "“Finding a couple stranded in transit, Dishank stepped in with native directions. Before flying back to Delhi, they insisted on hosting our driver for a farewell lunch.”"
+
+[story_3_title]
+other = "The Companion Who Made the Difference"
+
+[story_3_body]
+other = "“When asked for a future vehicle referral, a Bangalore traveler replied: ‘I’ll refer anyone to you on one condition—only if this Dishank driver assists them.’”"
+
+[story_4_title]
+other = "Uncompromising Care for Student Budgets"
+
+[story_4_body]
+other = "“When college students arrived for an exam with tight funds and 24 hours, Dishank arranged everything. They left praising the warm service within their modest budget.”"
+
+[story_5_title]
+other = "The Gift of Unspoken Family Trust"
+
+[story_5_body]
+other = "“Guiding an elderly mother and daughter through a 3-day wedding trip, they parted with a gift for our driver’s son and recommended Dishank to their entire family.”"
+
+[story_6_title]
+other = "The Safest Name in Town"
+
+[story_6_body]
+other = "“In just two short evening tours, Kendriya Vidyalaya teachers built a bond so strong they recommended Dishank to a women's educator group as Bhubaneswar's safest companion.”"
+
+[story_7_title]
+other = "How Complete Safety Turns Rules into Freedom"
+
+[story_7_body]
+other = "“Arriving with strict 11 PM curfews, a group of women educators took their first trip with Dishank. Trust was so immediate that curfews dissolved into 3 AM morning drives.”"
+
+[story_8_title]
+other = "Total Faith: \"Just Plan It Your Way\""
+
+[story_8_body]
+other = "“Returning six months later with a new group, she skipped route checks entirely, handed us her schedule, and told Dishank: ‘Plan everything as per your choice.’”"
+
+[story_9_title]
+other = "Serving Wisdom: The Delight of Elderly Care"
+
+[story_9_body]
+other = "“Hosting a retired bureaucrat couple from Gujarat reminded us that true luxury is respect. Beyond paying our full fee, their heartfelt blessings meant everything to Dishank.”"
+
+[story_10_title]
+other = "Unshakable Patience for Spontaneous Minds"
+
+[story_10_body]
+other = "“When a group of friends changed their itinerary every three hours for 3 days, Dishank adapted effortlessly on the ground. Today, they remain lifelong friends.”"
+
+[story_11_title]
+other = "The Power of a Seamless Experience"
+
+[story_11_body]
+other = "“Just one month after his trip, a traveler returned asking for the exact same Dishank hotel and driver setup. To date, he has referred four separate traveler groups.”"
+
+[stamp_truth_subtext]
+other = "Ground Realities Mapped Before Booking"
+
+[stamp_secured_subtext]
+other = "Zero Backdoor Hotel or Transit Commissions"

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dishank OG Image Compositor</title>
+    <style>
+        body { 
+            background: #111; 
+            color: #fff; 
+            font-family: system-ui, -apple-system, sans-serif; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            min-height: 100vh; 
+            margin: 0; 
+        }
+        canvas { 
+            border: 2px solid #b8860b; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8); 
+            max-width: 90vw; 
+            height: auto; 
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+        }
+        button { 
+            margin-top: 20px; 
+            padding: 12px 24px; 
+            font-size: 1rem; 
+            background: #b8860b; 
+            color: #fff; 
+            border: none; 
+            border-radius: 6px; 
+            cursor: pointer; 
+            font-weight: bold; 
+            transition: background 0.2s;
+        }
+        button:hover { background: #d4af37; }
+    </style>
+</head>
+<body>
+    <h2>Dishank OG Share Card Compositor (1200x630)</h2>
+    <canvas id="ogCanvas" width="1200" height="630"></canvas>
+    <button onclick="downloadImage()">⬇️ Download og-share.jpg</button>
+
+    <script>
+        const canvas = document.getElementById('ogCanvas');
+        const ctx = canvas.getContext('2d');
+
+        async function renderCard() {
+            // Enable high-quality image smoothing
+            ctx.imageSmoothingEnabled = true;
+            ctx.imageSmoothingQuality = 'high';
+
+            // 1. Draw Background Cultural Image
+            const baseImg = new Image();
+            baseImg.src = 'og-share-base.jpg';
+            
+            baseImg.onload = () => {
+                ctx.drawImage(baseImg, 0, 0, 1200, 630);
+
+                // 2. Load and Draw Logo cleanly
+                const logo = new Image();
+                logo.src = 'logo.svg';
+
+                logo.onload = () => {
+                    // Maximum bounding box for logo in top-left
+                    const maxBoxSize = 200; 
+                    const paddingX = 60;
+                    const paddingY = 60;
+
+                    // Calculate proportional aspect ratio (No stretching)
+                    let width = logo.width || maxBoxSize;
+                    let height = logo.height || maxBoxSize;
+
+                    if (width > height) {
+                        height = (height / width) * maxBoxSize;
+                        width = maxBoxSize;
+                    } else {
+                        width = (width / height) * maxBoxSize;
+                        height = maxBoxSize;
+                    }
+
+                    // Apply slight brightness/saturate filter so SVG colors pop against dark bg
+                    ctx.save();
+                    ctx.filter = 'brightness(1.1) saturate(1.25) drop-shadow(0px 4px 10px rgba(0,0,0,0.6))';
+                    
+                    // Render logo with exact aspect ratio
+                    ctx.drawImage(logo, paddingX, paddingY, width, height);
+                    ctx.restore();
+                };
+            };
+        }
+
+        function downloadImage() {
+            const link = document.createElement('a');
+            link.download = 'og-share.jpg';
+            link.href = canvas.toDataURL('image/jpeg', 0.95);
+            link.click();
+        }
+
+        renderCard();
+    </script>
+</body>
+</html>
